@@ -6,9 +6,9 @@ import FeedScreen from './src/screens/FeedScreen'
 const App = () => {
   return(
     <>
-      {/* <LoginScreen /> */}
+      <LoginScreen />
       {/* <TermsScreen /> */}
-      <FeedScreen />
+      {/* <FeedScreen /> */}
     </>
   );
 };

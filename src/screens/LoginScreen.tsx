@@ -15,16 +15,22 @@ const LoginScreen = () => {
       <Title style={styles.title}> Welcome to the starport</Title>
     </Card.Content>
   </Card>
+
+  <View>
     <TextInput
       label="Email"
       value={text}
       onChangeText={text => setText(text)}
-    />
+    />;
+    </View>
+    <View>
     <TextInput
       label="password"
       value={text}
       onChangeText={text => setText(text)}
-/>
+/>;
+</View>
+<View>
   <Button  mode="outlined" onPress={() => console.log('Pressed')}>
     s'enregistrer
   </Button>
@@ -49,7 +55,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 30,
     fontWeight: "bold"
-  }
+  };
 
 });
 export default LoginScreen;
