@@ -1,12 +1,11 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { TextInput } from 'react-native-paper';
-import {View} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import { Button } from 'react-native-paper';
 import { Card, Title} from 'react-native-paper';
-import { StyleSheet} from "react-native";
 
 const LoginScreen = () => {
-  const [text, setText] = React.useState('');
+  const [text, setText] = useState('');
 
   return (
     <View style={styles.container}>
@@ -21,19 +20,20 @@ const LoginScreen = () => {
       label="Email"
       value={text}
       onChangeText={text => setText(text)}
-    />;
+    />
     </View>
     <View>
     <TextInput
       label="password"
       value={text}
       onChangeText={text => setText(text)}
-/>;
+/>
 </View>
 <View>
   <Button  mode="outlined" onPress={() => console.log('Pressed')}>
     s'enregistrer
   </Button>
+</View>
 </View>
   );
 };
@@ -50,13 +50,12 @@ const styles = StyleSheet.create({
     borderWidth: 4,
     borderColor: "#20232a",
     borderRadius: 6,
-    backgroundColor: "#61dafb",
+    backgroundColor: "white",
     color: "#20232a",
     textAlign: "center",
     fontSize: 30,
     fontWeight: "bold"
-  };
-
+  }
 });
 export default LoginScreen;
 
