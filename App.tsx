@@ -6,14 +6,18 @@ import FeedScreen from './src/screens/FeedScreen'
 import StarshipCard from './src/components/StarshipCard'
 import { useQuery } from 'react-query'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import{useStarships} from './src/hooks/useStarships'
+import showStarShip from './src/screens/showStarship'
+
+const queryClient = new QueryClient()
+
 const App = () => {
+
   return(
-    <>
-      {/* <LoginScreen /> */}
-      {/* <TermsScreen /> */}
-      <StarshipCard/>
-      {/* <Header/> */}
-    </>
+      // <QueryClientProvider client={queryClient}> <showStarShip/>  </QueryClientProvider>
+      // <StarshipCard/>
+      <showStarShip/>
+
   );
 };
 
